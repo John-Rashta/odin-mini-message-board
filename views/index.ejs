@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <a href="new">
+      <span>New Message</span>
+    </a>
+    <ul>
+    <% messages.map((message) => { %>
+        <li>user: <%= message.user %> <a href=<%= `message/${message.user}` %> target="_blank" >Open</a> </li>
+    <% }) %>
+    </ul>
+  </body>
+</html>
